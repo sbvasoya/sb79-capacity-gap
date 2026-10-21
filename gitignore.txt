@@ -1,0 +1,13 @@
+# big raw data files
+data/raw/
+*.zip
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+
+# notebook / python junk
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
