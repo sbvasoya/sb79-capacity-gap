@@ -27,7 +27,6 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 | Tier 2 | 140 du/ac | 100 du/ac | 80 du/ac |
 
 ## Data sources
-Raw data is **not** stored in this repo (too large). Download into `data/raw/`:
 
 | Dataset | Source |
 |---|---|
@@ -39,8 +38,8 @@ Raw data is **not** stored in this repo (too large). Download into `data/raw/`:
 
 ## Repo structure
 ```
-data/raw/        # downloads (gitignored)
-data/processed/
+raw_data/        # raw data from the sources linked above
+processed_data/  # data post-processing (filtering, spatial joins, etc.)
 notebooks/       # analysis notebooks, numbered in order
 outputs/         # maps and tables
 ```
