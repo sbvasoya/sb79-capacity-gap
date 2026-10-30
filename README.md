@@ -27,7 +27,6 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 | Tier 2 | 140 du/ac | 100 du/ac | 80 du/ac |
 
 ## Data sources
-Raw data is stored in the `raw_data` folder. Processed data (after filtering and cleaning the raw data) can be found in `processed_data`.
 
 | Dataset | Source |
 |---|---|
@@ -39,8 +38,8 @@ Raw data is stored in the `raw_data` folder. Processed data (after filtering and
 
 ## Repo structure
 ```
-data/raw/        # downloads (gitignored)
-data/processed/
+raw_data/        # raw data from the sources linked above
+processed_data/  # data post-processing (filtering, spatial joins, etc.)
 notebooks/       # analysis notebooks, numbered in order
 outputs/         # maps and tables
 ```
