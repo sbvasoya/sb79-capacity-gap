@@ -1,5 +1,4 @@
 # big raw data files
-data/raw/
 *.zip
 *.shp
 *.shx
