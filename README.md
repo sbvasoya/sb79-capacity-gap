@@ -1,6 +1,6 @@
 # How Much Will Actually Get Built? SB 79's Housing Capacity Gap Near Transit
 
-**CYPLAN 101, Group 27, MTC Project 3**
+**CYPLAN 101, Group 27, MTC Project 3**<br>
 Rohan Kosalge, Abhishek Dandekar, Bhairavi Senthilkumar, Suhani Vasoya
 
 ## Research question
