@@ -30,9 +30,9 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 
 | Dataset | Source |
 |---|---|
-| SB 79 TOD stops & zones | [MTC SB 79 Regional Map](https://mtc.ca.gov/planning/land-use/senate-bill-79-regional-map) |
-| Alameda County parcels | [data.acgov.org](https://data.acgov.org) – Alameda County Parcel Boundaries |
-| Equity Priority Communities | [MTC EPCs](https://www.mtc.ca.gov/planning/transportation/access-equity-mobility/equity-priority-communities) |
+| SB 79 TOD stops & zones | [MTC SB 79 Regional Map](https://mtc.ca.gov/planning/land-use/senate-bill-79-regional-map) [`raw_data/tod_zones.geojson`]|
+| Alameda County parcels | [data.acgov.org](https://data.acgov.org) – Alameda County Parcel Boundaries [`raw_data/parcels.geojson`]|
+| Equity Priority Communities | [MTC EPCs](https://www.mtc.ca.gov/planning/transportation/access-equity-mobility/equity-priority-communities) [`raw_data/epc_data.geojson`]|
 
 ## Repo structure
 ```
