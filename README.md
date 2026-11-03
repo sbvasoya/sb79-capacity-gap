@@ -65,6 +65,7 @@ Raw files are stored with **Git LFS**. Run `git lfs install` before cloning, or 
 ```
 data/raw/              # raw data (Git LFS)
 data/processed/        # parcels_tod.parquet (masked parcels), parcels_tod_clean.parquet (final)
+analysis/              # data_processing.py (raw → processed), visualize.py (charts, map)
 notebooks/             # 01_data_cleaning.ipynb → 02_eda.ipynb
 visualizations/charts/ # EDA charts
 visualizations/maps/   # county-wide map
@@ -73,6 +74,7 @@ Group_27_midterm.pdf   # midterm report
 
 ## How to run
 1. Clone with Git LFS (see above) and install dependencies: `pip install -r requirements.txt`
-2. Run `notebooks/01_data_cleaning.ipynb`, then `notebooks/02_eda.ipynb`, from inside `notebooks/`.
+2. Regenerate `data/processed/` from `data/raw/` by running `python analysis/data_processing.py` from the project root.
+3. Run `notebooks/01_data_cleaning.ipynb`, then `notebooks/02_eda.ipynb`, from inside `notebooks/`. Both import their functions from `analysis/`.
 
 Loading the full parcel file takes a few minutes. To skip it, start from `data/processed/parcels_tod.parquet`.
