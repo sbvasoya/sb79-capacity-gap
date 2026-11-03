@@ -30,20 +30,33 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 
 | Dataset | Source |
 |---|---|
-| SB 79 TOD stops & zones | [MTC SB 79 Regional Map](https://mtc.ca.gov/planning/land-use/senate-bill-79-regional-map) [`raw_data/tod_zones.geojson`]|
-| Alameda County parcels | [data.acgov.org](https://data.acgov.org) – Alameda County Parcel Boundaries [`raw_data/parcels.geojson`]|
-| Equity Priority Communities | [MTC EPCs](https://www.mtc.ca.gov/planning/transportation/access-equity-mobility/equity-priority-communities) [`raw_data/epc_data.geojson`]|
+| SB 79 TOD stops & zones | [MTC SB 79 Regional Map](https://mtc.ca.gov/planning/land-use/senate-bill-79-regional-map) [`data/raw/tod_zones.geojson`]|
+| Alameda County parcels | [data.acgov.org](https://data.acgov.org) – Alameda County Parcel Boundaries [`data/raw/parcels.geojson`]|
+| Equity Priority Communities | [MTC EPCs](https://www.mtc.ca.gov/planning/transportation/access-equity-mobility/equity-priority-communities) [`data/raw/epc_data.geojson`]|
 | 511 Regional GTFS | *plan to use between Midterm and Final Deadlines* |
 | Housing Element APR, Table A2 | *plan to use between Midterm and Final Deadlines* |
 
 ## Repo structure
 ```
 data/raw/         # raw data from the sources linked above
-data/processed/  # data post-processing (filtering, spatial joins, etc.)
-notebooks/       # analysis notebooks, numbered in order
-visualizations/  # maps and tables
-
+data/processed/   # data post-processing (filtering, spatial joins, etc.)
+analysis/         # functions used by the notebooks
+  data_processing.py   # raw -> processed (cleaning, spatial joins)
+  visualize.py         # charts and maps
+notebooks/        # analysis notebooks, numbered in order
+visualizations/   # maps and charts
 ```
 
 ## How to run
-Open a notebook in Google Colab (File → Upload notebook), upload the data files via the folder panel, and run all cells.
+From the project root:
+
+```bash
+pip install -r requirements.txt
+python analysis/data_processing.py   # regenerates data/processed/ from data/raw/
+```
+
+Then open the notebooks in order and run **Kernel → Restart & Run All**:
+1. `notebooks/01_data_cleaning.ipynb`: same steps as the script, one at a time
+2. `notebooks/02_eda.ipynb`: charts, saved to `visualizations/charts/`
+
+The raw `.geojson` files are stored with Git LFS. Run `git lfs pull` after cloning, or download them from the sources above into `data/raw/`.
