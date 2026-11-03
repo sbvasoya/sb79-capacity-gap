@@ -8,7 +8,7 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 
 ## Status (midterm check-in, Oct 2026)
 - [x] Project proposal
-- [x] Capacity engine prototype — Berkeley pilot (`notebooks/01_berkeley_capacity_engine.ipynb`)
+- [x] Data Preparation and Analysis (`notebooks/data_cleaning.ipynb`, `notebooks/eda.ipynb`)
 - [ ] Net capacity (subtract existing units, ineligible zoning)
 - [ ] Equity Priority Community overlay
 - [ ] Santa Clara County case-study city
@@ -38,10 +38,11 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 
 ## Repo structure
 ```
-raw_data/        # raw data from the sources linked above
-processed_data/  # data post-processing (filtering, spatial joins, etc.)
+data/raw/         # raw data from the sources linked above
+data/processed/  # data post-processing (filtering, spatial joins, etc.)
 notebooks/       # analysis notebooks, numbered in order
-outputs/         # maps and tables
+visualizations/  # maps and tables
+
 ```
 
 ## How to run
