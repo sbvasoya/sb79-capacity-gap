@@ -8,7 +8,7 @@ Within SB 79 Transit-Oriented Development zones in Alameda and Santa Clara Count
 
 ## Status (midterm check-in, Oct 2026)
 - [x] Project proposal
-- [x] Data Preparation and Analysis (`notebooks/data_cleaning.ipynb`, `notebooks/eda.ipynb`)
+- [x] Data Preparation and Analysis (`notebooks/01_data_cleaning.ipynb`, `notebooks/02_eda.ipynb`)
 - [ ] Net capacity (subtract existing units, ineligible zoning)
 - [ ] Equity Priority Community overlay
 - [ ] Santa Clara County case-study city
